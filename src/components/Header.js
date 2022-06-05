@@ -1,5 +1,5 @@
 import * as React from "react";
-import Home from "./Home";
+import Main from "./Main";
 import AppBar from "./AppBar";
 import Settings from "./Settings";
 import NotFound from "./NotFound";
@@ -16,7 +16,7 @@ export default function Header() {
         </div>
       </nav>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Main />} />
         <Route path="/settings" element={<Settings />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
