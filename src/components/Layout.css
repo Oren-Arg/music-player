@@ -1,0 +1,19 @@
+.header-nav{
+        height:10vh;
+        background-color: black;
+}
+
+label{
+    font-size:1.5em;
+    color:rgb(0, 0, 0);
+}
+
+.search-input{
+    margin-left: 3px;
+    padding-left:3px;
+}
+
+.search-container{
+    display:flex;
+    justify-content:center;
+}
