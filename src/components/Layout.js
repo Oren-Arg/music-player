@@ -5,6 +5,7 @@ import Settings from "./Settings";
 import NotFound from "./NotFound";
 import { Routes, Route, Link } from "react-router-dom";
 import "./Layout.css";
+import LogIn from "./LogIn";
 export default function Layout() {
   return (
     <div className="Layout">
@@ -15,6 +16,7 @@ export default function Layout() {
           <AppBar />
         </div>
       </nav>
+      <LogIn/>
       <Routes>
         <Route path="/" element={<Main />} />
         <Route path="/settings" element={<Settings />} />
