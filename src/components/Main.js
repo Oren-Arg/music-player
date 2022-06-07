@@ -59,7 +59,11 @@ const Main = () => {
       `https://api.spotify.com/v1/browse/categories/${val}/playlists?limit=10`,
       {
         method: "GET",
-        headers: { Authorization: "Bearer " + token },
+        headers: {
+          Authorization:
+            "Bearer " +
+            /*token*/ "BQDTxit8rnt4UgUhMRkoCgSJI4990A_tsX5tG6o53Q7U6n1DrKUpH-b84mLQdW8Q2XbqHrWiK14yxqOLy20WochRLGp-b_yvA4ecww3Ei_fkSEtYbcF9TCDzeWhp8P1LLMDWB2DDbbCcznFe1O3ZBZdMMQ-EKmsIfMG52KyboWHzwbDP9wVOq2U",
+        },
       }
     ).then((playlistResponse) => {
       setPlaylist({
@@ -87,7 +91,9 @@ const Main = () => {
       {
         method: "GET",
         headers: {
-          Authorization: "Bearer " + token,
+          Authorization:
+            "Bearer " +
+            "BQDTxit8rnt4UgUhMRkoCgSJI4990A_tsX5tG6o53Q7U6n1DrKUpH-b84mLQdW8Q2XbqHrWiK14yxqOLy20WochRLGp-b_yvA4ecww3Ei_fkSEtYbcF9TCDzeWhp8P1LLMDWB2DDbbCcznFe1O3ZBZdMMQ-EKmsIfMG52KyboWHzwbDP9wVOq2U",
         },
       }
     ).then((tracksResponse) => {
@@ -105,6 +111,7 @@ const Main = () => {
 
     setTrackDetail(trackInfo[0].track);
   };
+  console.log(trackDetail);
 
   return (
     <div className="container">
