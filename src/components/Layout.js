@@ -1,13 +1,13 @@
 import * as React from "react";
-import Home from "./Home";
+import Main from "./Main";
 import AppBar from "./AppBar";
 import Settings from "./Settings";
 import NotFound from "./NotFound";
 import { Routes, Route, Link } from "react-router-dom";
-import "./Header.css";
-export default function Header() {
+import "./Layout.css";
+export default function Layout() {
   return (
-    <div className="Header">
+    <div className="Layout">
       <nav className="header-nav">
         <Link to="/">Home</Link>
         <Link to="/settings">Settings</Link>
@@ -16,7 +16,7 @@ export default function Header() {
         </div>
       </nav>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Main />} />
         <Route path="/settings" element={<Settings />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
